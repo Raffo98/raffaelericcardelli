@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Suisse";
+  src: url("./assets/font/SuisseIntl-Book.otf");
+}
+
+.inner-site {
+  display: flex;
+  flex-direction: column;
+}
+
+/*******************************************************PHOTOGRAPHY PAGE*******************************************************/
+
+/*header*/
+.header {
+  font-family: "Suisse";
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+}
+
+.name {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  float: left;
+  padding: 25px 80px;
+  vertical-align: middle;
+}
+
+ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.works, .contact, .about {
+  padding-left: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.sections {
+  margin: 0;
+  padding: 25px 80px;
+  font-size: 15px;
+  float: right;
+}
+
+/*body*/
+
+.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
+}
+
+.caption {
+  height: 100%;
+  font-family: "Suisse";
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  transform: translateZ(-1px) scale(1.5);
+  z-index: -1;
+}
+
+/* The styling for the static div. */
+.static {
+  background-image: url('./assets/photos/monks.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.static2 {
+  background-image: url('./assets/photos/Rome.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg1::after {
+  background-image: url('./assets/photos/lockdown_Emma.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg2::after {
+  background-image: url('./assets/photos/fuorisalone_light.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

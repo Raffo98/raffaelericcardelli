@@ -20,17 +20,15 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 //animation fadeOutLeft on click
 $(".works").click(function() {
   const element_home = document.querySelectorAll("ul.sections_home li");
-  const sections_works = document.querySelectorAll("ul.sections_works li");
-  for (var i = 0; i < 3; i++) {
-    element_home[i].classList.add('animate__animated', 'animate__fadeOutLeft');
-  }
   for (var i = 0; i < 4; i++) {
-    sections_works[i].style.removeProperty('display');
-    sections_works[i].style.display = "flex";
-    sections_works[i].classList.add('animate__animated', 'animate__fadeInRight');
+    var j = i + 4;
+    element_home[i].classList.add('fadeOutLeftAnim');
+    element_home[j].classList.add('fadeInRightAnim');
+    element_home[j].style.setProperty('pointer-events', 'auto');
   }
 });
 
 animateCSS('.works', 'fadeInDown', 'animate__');
 animateCSS('.contact', 'fadeInDown', 'animate__');
 animateCSS('.about', 'fadeInDown', 'animate__');
+animateCSS('.social', 'fadeInDown', 'animate__');

@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Suisse";
+  src: url("./assets/font/SuisseIntl-Book.otf");
+}
+
+/*******************************************************SLIDESHOW PAGES*******************************************************/
+.wrapper {
+  display: flex;
+}
+
+/*header*/
+.header {
+  font-family: "Suisse";
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+}
+
+.name {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  float: left;
+  padding: 25px 80px;
+  vertical-align: middle;
+}
+
+ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.works, .contact, .about {
+  padding-left: 50px;
+}
+
+.sections {
+  margin: 0;
+  padding: 25px 80px;
+  font-size: 15px;
+  float: right;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+img {
+    max-width:100%;
+    max-height: 100vh;
+}
