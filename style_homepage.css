@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Suisse";
+  src: url("./assets/font/SuisseIntl-Book.otf");
+}
+
+/*******************************************************HOMEPAGE*******************************************************/
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.inner-list {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.sections_home {
+  display: flex;
+  flex-direction: column;
+  font-family: "Suisse";
+  font-size: 20px;
+  line-height: 2;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.sections_works {
+  display: flex;
+  flex-direction: column;
+  font-family: "Suisse";
+  font-size: 20px;
+  line-height: 2;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  font-size: 30px;
+  line-height: 4;
+  letter-spacing: 0.1em;
+}
+
+.works {
+  --animate-delay: 0.1s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.contact {
+  --animate-delay: 0.2s;
+}
+
+.about {
+  --animate-delay: 0.3s;
+}
+
+.placeholder {
+  display: none;
+}
+
+.photography {
+  display: none;
+  --animate-delay: 0.1s;
+}
+
+.video {
+  display: none;
+  --animate-delay: 0.2s;
+}
+
+.coding {
+  display: none;
+  --animate-delay: 0.3s;
+}
+
+.typography {
+  display: none;
+  --animate-delay: 0.4s;
+}
