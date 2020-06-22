@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
-  <link rel="stylesheet" type="text/css" href="style_photography.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="style_parallax.css" media="screen" />
   <style>
     body {
       padding: 0;
@@ -17,46 +17,64 @@
   <div class="inner-site">
     <div class="wrapper">
       <header class="header">
-        <div class="name">
-          RAFFAELE RICCARDELLI
-        </div>
+        <div class="name"><a href="index.html">
+            RAFFAELE RICCARDELLI
+          </a></div>
         <ul class="sections">
           <li class="home"><a href="index.html">
-            HOME
-          </a></li>
+              HOME
+            </a></li>
           <li class="works"><a href="#">
-            WORKS
-          </a></li>
+              WORKS
+            </a></li>
           <li class="contact"><a href="#">
-            CONTACT
-          </a></li>
+              CONTACT
+            </a></li>
           <li class="about"><a href="#">
-            ABOUT
-          </a></li>
+              ABOUT
+            </a></li>
         </ul>
       </header>
       <div class="section parallax bg1">
         <a href="w-p-1.html">
-        <div class = "caption">Via Cenisio 40 - Lockdown</div>
-      </a>
+          <div class="caption">Via Cenisio 40 - Lockdown</div>
+        </a>
       </div>
       <div class="section static">
         <a href="#">
-        <div class = "caption">Acquasanta Terme monks</div>
+          <div class="caption">Acquasanta Terme monks</div>
         </a>
       </div>
       <div class="section parallax bg2">
         <a href="#">
-        <div class = "caption">Fuorisalone</div>
+          <div class="caption">Fuorisalone</div>
         </a>
       </div>
       <div class="section static2">
         <a href="#">
-        <div class = "caption">Street Photography</div>
+          <div class="caption">Street Photography</div>
         </a>
       </div>
     </div>
   </div>
 </body>
+
+<style>
+  .static {
+    background-image: url('./assets/photos/monks.jpg');
+  }
+
+  .static2 {
+    background-image: url('./assets/photos/Rome.jpg');
+  }
+
+  .bg1::after {
+    background-image: url('./assets/photos/lockdown_Emma.jpg');
+  }
+
+  .bg2::after {
+    background-image: url('./assets/photos/fuorisalone_light.jpg');
+  }
+</style>
 
 </html>
