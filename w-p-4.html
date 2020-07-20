@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <link rel="stylesheet" type="text/css" href="style_slideshow.css" media="screen" />
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="inner-site">
+    <div class="wrapper">
+      <header class="header">
+        <div class="name"><a href="index.html">
+            RAFFAELE RICCARDELLI
+          </a></div>
+        <ul class="sections">
+          <li class="home"><a href="index.html">
+              HOME
+            </a></li>
+          <li class="works"><a href="#">
+              WORKS
+            </a></li>
+          <li class="contact"><a href="#">
+              CONTACT
+            </a></li>
+          <li class="about"><a href="#">
+              ABOUT
+            </a></li>
+        </ul>
+      </header>
+      <div id="container" class="container-lightbox">
+        <div class="row">
+          <div class="preview-box">
+            <!-- <div class="project-text">I recorded a family that live in Via Cenisio 40, Milan. Since the lockdown started, families have closed themselves at home, but they have kept the desire of seeing each other, by organizing activities.
+              I recorded Pastori family: Emma, Sara, Chiara, Daniela and Claudio. Sara studies and watches TV series. Chiara helps Emma to do her homework. Sometimes they cook and sort polaroids in order to stick them on the bedroom wall.
+              Packages are delivered by using the lift. Many outdoor activities are restricted, and each family member tries to find a small private space.
+              The Pope brings a message of hope through a speech that all the family listened to on the sofa. It is possible to go out in restricted cases and Emma can only play in the courtyard or have a walk near the building. Since 8th May the
+              government declared the beginning of Phase Two. For this reason Chiara goes to the Cimitero Monumentale to see her grandfather.
+            </div> -->
+            <div class="preview-container">
+              <img class="preview hover-opacity cursor" src="assets/photos/street/01.jpg" onclick="openModal();currentSlide(1)">
+            </div>
+          </div>
+          <div class="column">
+            <img src="assets/photos/street/02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/street/03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/street/04.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/street/05.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/street/06.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/street/07.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/street/08.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/street/09.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/street/10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/street/11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-opacity cursor">
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <div class="close cursor" onclick="closeModal()">&times;</div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/street/01.jpg" style="width:100%">
+              <div class="img__description_layer">
+                <p class="img__description">Rome, Italy 2019</p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/street/02.jpg" style="width:100%">
+              <div class="img__description_layer">
+                <p class="img__description">Moscow, Russia 2019</p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/street/03.jpg" style="width:100%">
+              <div class="img__description_layer">
+                <p class="img__description">Suzdal, Russia 2019</p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/street/04.jpg" style="width:100%">
+              <div class="img__description_layer">
+                <p class="img__description">Moscow, Russia 2019</p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/street/05.jpg" style="width:100%">
+              <div class="img__description_layer">
+                <p class="img__description">Moscow, Russia 2019</p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/street/06.jpg" style="width:100%">
+              <div class="img__description_layer">
+                <p class="img__description">Moscow, Russia 2019</p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/street/07.jpg" style="width:100%">
+              <div class="img__description_layer">
+                <p class="img__description">Milan, Italy 2019</p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/street/08.jpg" style="width:100%">
+              <div class="img__description_layer">
+                <p class="img__description">Milan, Italy 2019</p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/street/09.jpg" style="width:100%">
+              <div class="img__description_layer">
+                <p class="img__description">Milan, Italy 2019</p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/street/10.jpg" style="width:100%">
+              <div class="img__description_layer">
+                <p class="img__description">Milan, Italy 2019</p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/street/11.jpg" style="width:100%">
+              <div class="img__description_layer">
+                <p class="img__description">Milan, Italy 2019</p>
+              </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/slideshow.js"></script>
+</body>
+
+</html>

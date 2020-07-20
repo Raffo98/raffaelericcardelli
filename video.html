@@ -35,46 +35,53 @@
             </a></li>
         </ul>
       </header>
-      <div class="section parallax bg1">
-        <a href="w-p-1.html">
-          <div class="caption">Connettiti alla strada, non al tuo smartphone</div>
-        </a>
+      <div class="wrapper-video">
+        <div id="caption-video">Connettiti alla strada, non al tuo smartphone</div>
+      <div class="container-video" function="container">
+        <video id="preview1" poster="assets/video/connettiti_alla_strada/preview1.png" controls>
+          <source src="assets/video/connettiti_alla_strada/LaPuntaDelCono_video.mp4" type="video/mp4">
+        </video>
       </div>
-      <div class="section static">
-        <a href="#">
-          <div class="caption">Connettiti alla strada, non al tuo smartphone</div>
-        </a>
-      </div>
-      <div class="section parallax bg2">
-        <a href="#">
-          <div class="caption">Connettiti alla strada, non al tuo smartphone</div>
-        </a>
-      </div>
-      <div class="section static2">
-        <a href="#">
-          <div class="caption">Connettiti alla strada, non al tuo smartphone</div>
-        </a>
-      </div>
+    </div>
     </div>
   </div>
 </body>
 
 <style>
-  .static {
-    background-image: url('./assets/video/connettiti_alla_strada/preview1.png');
+  @font-face {
+    font-family: "Suisse";
+    src: url("./assets/font/SuisseIntl-Book.otf");
   }
 
-  .static2 {
-    background-image: url('./assets/video/connettiti_alla_strada/preview1.png');
+  #preview1 {
+    z-index: 0;
   }
 
-  .bg1::after {
-    background-image: url('./assets/video/connettiti_alla_strada/preview1.png');
+  #caption-video {
+    font-family: "Suisse";
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    top: 50%;
+    position: absolute;
   }
 
-  .bg2::after {
-    background-image: url('./assets/video/connettiti_alla_strada/preview1.png');
+  .container-video {
+    width: 100vw;
   }
 </style>
+
+<script>
+  // var preview = document.getElementById("preview1");
+  // if (preview.paused == false) {
+  //   alert("errr");
+  //   var overlay = document.getElementById('caption-video');
+  //   overlay.display = 'none';
+  // }
+
+
+</script>
 
 </html>

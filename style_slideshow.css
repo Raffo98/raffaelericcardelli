@@ -78,18 +78,17 @@ a:hover {
   width: 100%;
 }
 
-.project-text {
+/* .project-text {
   font-family: "Suisse";
-  font-size: 12px;
+  font-size: 20px;
   width: 35%;
-}
+} */
 
 .preview-container {
   width: 100vw;
   left: 0;
   right: 0;
   box-sizing: border-box;
-  padding-left: 20px;
   cursor: pointer;
 }
 

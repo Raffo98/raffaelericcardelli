@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Suisse";
+  src: url("./assets/font/SuisseIntl-Book.otf");
+}
+
+/*******************************************************CONTACT AND ABOUT PAGES*******************************************************/
+.wrapper {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+}
+
+/*header*/
+.header {
+  font-family: "Suisse";
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  order: 1;
+}
+
+.name {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  float: left;
+  padding: 25px 80px;
+  vertical-align: middle;
+  color: black;
+}
+
+ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.works, .contact, .about {
+  padding-left: 50px;
+}
+
+.sections {
+  margin: 0;
+  padding: 25px 80px;
+  font-size: 15px;
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+/*LIGHTBOX*/
+* {
+  box-sizing: border-box;
+}
+
+.image-box {
+  margin-top: 76px;
+  padding-left: 80px;
+  padding-right: 80px;
+  order: 2;
+}
+
+.title {
+  font-family: "Suisse";
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-top: 38px;
+  width: 100%;
+  order: 3;
+}
+
+/*******************************************************CONTACT PAGE*******************************************************/
+
+/* Style inputs */
+input[type=text], select, textarea {
+  font-family: "Suisse";
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Suisse";
+}
+
+input[type=submit]:hover {
+  background-color: black;
+  font-family: "Suisse";
+}
+
+/* Create two columns that float next to eachother */
+.column-form {
+  font-family: "Suisse";
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  margin: auto;
+  order: 4;
+}
+
+.name-form {
+  width: 100%;
+  display: inline-block;
+}
+
+#fname {
+  width: 48.5%;
+  margin-right: 22px;
+}
+
+#lname {
+  width: 48.5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*******************************************************ABOUT PAGE*******************************************************/
+.text-about {
+  padding-top: 38px;
+  margin: auto;
+  font-family: "Suisse";
+  width: 40%;
+  order: 5;
+}

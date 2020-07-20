@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <link rel="stylesheet" type="text/css" href="style_slideshow.css" media="screen" />
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="inner-site">
+    <div class="wrapper">
+      <header class="header">
+        <div class="name"><a href="index.html">
+            RAFFAELE RICCARDELLI
+          </a></div>
+        <ul class="sections">
+          <li class="home"><a href="index.html">
+              HOME
+            </a></li>
+          <li class="works"><a href="#">
+              WORKS
+            </a></li>
+          <li class="contact"><a href="#">
+              CONTACT
+            </a></li>
+          <li class="about"><a href="#">
+              ABOUT
+            </a></li>
+        </ul>
+      </header>
+      <div id="container" class="container-lightbox">
+        <div class="row">
+          <div class="preview-box">
+            <!-- <div class="project-text">I recorded a family that live in Via Cenisio 40, Milan. Since the lockdown started, families have closed themselves at home, but they have kept the desire of seeing each other, by organizing activities.
+              I recorded Pastori family: Emma, Sara, Chiara, Daniela and Claudio. Sara studies and watches TV series. Chiara helps Emma to do her homework. Sometimes they cook and sort polaroids in order to stick them on the bedroom wall.
+              Packages are delivered by using the lift. Many outdoor activities are restricted, and each family member tries to find a small private space.
+              The Pope brings a message of hope through a speech that all the family listened to on the sofa. It is possible to go out in restricted cases and Emma can only play in the courtyard or have a walk near the building. Since 8th May the
+              government declared the beginning of Phase Two. For this reason Chiara goes to the Cimitero Monumentale to see her grandfather.
+            </div> -->
+            <div class="preview-container">
+              <img class="preview hover-opacity cursor" src="assets/photos/monks/01.jpg" onclick="openModal();currentSlide(1)">
+            </div>
+          </div>
+          <div class="column">
+            <img src="assets/photos/monks/02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/monks/03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/monks/04.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/monks/05.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/monks/06.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/monks/07.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/monks/08.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/monks/09.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/monks/10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/monks/11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/monks/12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/monks/13.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-opacity cursor">
+          </div>
+          <div class="column">
+            <img src="assets/photos/monks/14.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-opacity cursor">
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <div class="close cursor" onclick="closeModal()">&times;</div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/monks/01.jpg" style="width:100%">
+              <!-- <div class="img__description_layer">
+                <p class="img__description">Seven-year-old Emma Pastori studies multiplication tables on the floor.</p>
+              </div> -->
+            </div>
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/monks/02.jpg" style="width:100%">
+              <!-- <div class="img__description_layer">
+                <p class="img__description">Posters fixed at the entrance hall of the condominium in via Cenisio 40. The residents ask advices for songs to be played and sung at the daily meeting on balconies of the building. They also propose to
+                  shop grocery for the oldest inhabitants.</p>
+              </div> -->
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/monks/03.jpg" style="width:100%">
+              <!-- <div class="img__description_layer">
+                <p class="img__description">Sara, 14, prepares home-made Sardinian gnocchi. The preparation of gnocchi isn’t very complicated: she uses a fork to create the form, by taking a little piece of dough. Meanwhile, Emma, 7, does a little
+                  assignment with her sister Chiara.</p>
+              </div> -->
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/monks/04.jpg" style="width:100%">
+              <!-- <div class="img__description_layer">
+                <p class="img__description">Sara organizes polaroids in a geometrical way. After that, she attaches them using a scotch tape and then on the wall above her desk.</p>
+              </div> -->
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/monks/05.jpg" style="width:100%">
+              <!-- <div class="img__description_layer">
+                <p class="img__description">Emma receives a gift, a little digital camera toy. She is happy and thanks her mother hugging her. She has started taking photographs to her sisters.</p>
+              </div> -->
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/monks/06.jpg" style="width:100%">
+              <!-- <div class="img__description_layer">
+                <p class="img__description">Emma receives a gift, a little digital camera toy. She is happy and thanks her mother hugging her. She has started taking photographs to her sisters.</p>
+              </div> -->
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/monks/07.jpg" style="width:100%">
+              <!-- <div class="img__description_layer">
+                <p class="img__description">Emma Pastori, 7, hugs a peluche in her hut made of blankets.</p>
+              </div> -->
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/monks/08.jpg" style="width:100%">
+              <!-- <div class="img__description_layer">
+                <p class="img__description">Seven-year-old Emma Pastori tries to observe the planet Jupiter with a small binoculars. She thinks that it is the Polar Star.</p>
+              </div> -->
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/monks/09.jpg" style="width:100%">
+              <!-- <div class="img__description_layer">
+                <p class="img__description">Mimmo, the porter, delivers packages by putting them in the lift.</p>
+              </div> -->
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/monks/10.jpg" style="width:100%">
+              <!-- <div class="img__description_layer">
+                <p class="img__description">Daniela and Claudio draw up the shopping list: in those days it was important to plan the purchase of groceries, due to shopping restrictions and delays in delivery.</p>
+              </div> -->
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/monks/11.jpg" style="width:100%">
+              <!-- <div class="img__description_layer">
+                <p class="img__description">Claudio’s having his hair cut by Daniela.</p>
+              </div> -->
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/monks/12.jpg" style="width:100%">
+              <!-- <div class="img__description_layer">
+                <p class="img__description">Emma, 7, is sleeping with her mother during the afternoon.</p>
+              </div> -->
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/monks/13.jpg" style="width:100%">
+              <!-- <div class="img__description_layer">
+                <p class="img__description">The Pope makes an extraordinary benediction “Urbi et Orbi” to all the world in an empty St. Peter's square, broadcast by all media. All family gather to listen to the Pope's speech.</p>
+              </div> -->
+            </div>
+
+            <div class="mySlides">
+              <img class=" cursor" src="assets/photos/monks/14.jpg" style="width:100%">
+              <!-- <div class="img__description_layer">
+                <p class="img__description">Sara and Daniela go out to buy medicine and bread. They wear face masks due to a new ordinance promulgated by the region, in order to prevent getting Covid-19. Sara has gone out for the first time since the
+                  eighth of March, 2020.</p>
+              </div> -->
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/slideshow.js"></script>
+</body>
+
+</html>
