@@ -73,9 +73,17 @@ a:hover {
   -ms-animation: rightIn 0.3s ease-in 0s 1 normal forwards running;
 }
 
+.fadeInDownAnim {
+  animation: downIn 0.3s ease-in 0s 1 normal forwards running;
+  -webkit-animation: downIn 0.3s ease-in 0s 1 normal forwards running;
+  -moz-animation: downIn 0.3s ease-in 0s 1 normal forwards running;
+  -o-animation: downIn 0.3s ease-in 0s 1 normal forwards running;
+  -ms-animation: downIn 0.3s ease-in 0s 1 normal forwards running;
+}
+
 /*******************************************************SECTION HOME*******************************************************/
 
-.works {
+/* .works {
   --animate-delay: 0.1s;
 }
 
@@ -104,6 +112,37 @@ a:hover {
   -moz-animation-delay:0.4s;
   -o-animation-delay: 0.4s;
   -ms-animation-delay: 0.4s;
+} */
+
+.works {
+  opacity: 0;
+}
+
+.contact {
+  opacity: 0;
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay:0.1s;
+  -o-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+}
+
+.about {
+  opacity: 0;
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay:0.2s;
+  -o-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+}
+
+.social {
+  opacity: 0;
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay:0.3s;
+  -o-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
 }
 
 /*******************************************************SECTION WORKS*******************************************************/
@@ -115,6 +154,16 @@ a:hover {
 
 .video {
   opacity: 0;
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay:0.1s;
+  -o-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  pointer-events: none;
+}
+
+.coding {
+  opacity: 0;
   animation-delay: 0.2s;
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay:0.2s;
@@ -123,27 +172,7 @@ a:hover {
   pointer-events: none;
 }
 
-.coding {
-  opacity: 0;
-  animation-delay: 0.3s;
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay:0.3s;
-  -o-animation-delay: 0.3s;
-  -ms-animation-delay: 0.3s;
-  pointer-events: none;
-}
-
-.typography {
-  opacity: 0;
-  animation-delay: 0.4s;
-  -webkit-animation-delay: 0.4s;
-  -moz-animation-delay:0.4s;
-  -o-animation-delay: 0.4s;
-  -ms-animation-delay: 0.4s;
-  pointer-events: none;
-}
-
-
+/*******************************************************LEFT OUT*******************************************************/
 
 @keyframes leftOut {
   0% {
@@ -157,39 +186,15 @@ a:hover {
   }
 }
 
-@keyframes rightIn {
-  0% {
-    opacity: 0;
-    transform: translateX(0px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(-170px);
-  }
-}
-
 @-webkit-keyframes leftOut {
   0% {
     opacity: 1;
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
   }
 
   100% {
     opacity: 0;
-    transform: translateX(-150px);
-  }
-}
-
-@-webkit-keyframes rightIn {
-  0% {
-    opacity: 0;
-    transform: translateX(0px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(-170px);
+    -webkit-transform: translateX(-150px);
   }
 }
 
@@ -205,18 +210,6 @@ a:hover {
   }
 }
 
-@-moz-keyframes rightIn {
-  0% {
-    opacity: 0;
-    transform: translateX(0px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(-170px);
-  }
-}
-
 @-o-keyframes leftOut {
   0% {
     opacity: 1;
@@ -226,18 +219,6 @@ a:hover {
   100% {
     opacity: 0;
     transform: translateX(-150px);
-  }
-}
-
-@-o-keyframes rightIn {
-  0% {
-    opacity: 0;
-    transform: translateX(0px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(-170px);
   }
 }
 
@@ -253,6 +234,56 @@ a:hover {
   }
 }
 
+/*******************************************************RIGHT IN*******************************************************/
+
+@keyframes rightIn {
+  0% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-170px);
+  }
+}
+
+@-webkit-keyframes rightIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(-170px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes rightIn {
+  0% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-170px);
+  }
+}
+
+@-o-keyframes rightIn {
+  0% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-170px);
+  }
+}
+
 @-ms-keyframes rightIn {
   0% {
     opacity: 0;
@@ -262,5 +293,67 @@ a:hover {
   100% {
     opacity: 1;
     transform: translateX(-170px);
+  }
+}
+
+/*******************************************************DOWN IN*******************************************************/
+
+@keyframes downIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes downIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@-moz-keyframes downIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@-o-keyframes downIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@-ms-keyframes downIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

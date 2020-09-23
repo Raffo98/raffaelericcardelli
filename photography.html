@@ -20,25 +20,45 @@
         <div class="name"><a href="index.html">
             RAFFAELE RICCARDELLI
           </a></div>
-        <ul class="sections">
-          <li class="home"><a href="index.html">
-              HOME
-            </a></li>
-          <li class="dropdown">
-            <button class="dropbtn">WORKS</button>
-            <div class="dropdown-content">
-              <a href="photography.html">PHOTOGRAPHY</a>
-              <a href="video.html">VIDEO</a>
-              <a href="coding.html">CODING</a>
-            </div>
-          </li>
-          <li class="contact"><a href="contact.html">
-              CONTACT
-            </a></li>
-          <li class="about"><a href="about.html">
-              ABOUT
-            </a></li>
-        </ul>
+        <div class="wrapper-sections">
+          <ul class="sections">
+            <li class="home"><a href="index.html">
+                HOME
+              </a></li>
+            <li class="dropdown">
+              <button class="dropbtn">WORKS</button>
+              <div class="dropdown-content">
+                <a href="photography.html">PHOTOGRAPHY</a>
+                <a href="video.html">VIDEO</a>
+                <a href="coding.html">CODING</a>
+              </div>
+            </li>
+            <li class="contact"><a href="contact.html">
+                CONTACT
+              </a></li>
+            <li class="about"><a href="about.html">
+                ABOUT
+              </a></li>
+          </ul>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="javascript:void(0)" onclick="openNavWorks()">WORKS</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="about.html">ABOUT</a>
+          <a href="https://www.instagram.com/raffaelericcardelli/?hl=it">INSTAGRAM</a>
+        </div>
+
+        <div id="mySidenavWorks" class="sidenavWorks">
+          <a href="javascript:void(0)" class="closebtnWorks" onclick="closeNavWorks()">	&#8592;</a>
+          <a href="photography.html">PHOTOGRAPHY</a>
+          <a href="video.html">VIDEO</a>
+          <a href="coding.html">CODING</a>
+        </div>
+
+        <span class="hamburger" onclick="openNav()">&#9776;</span>
+
       </header>
       <div class="section parallax bg1">
         <a href="w-p-1.html">
@@ -81,5 +101,24 @@
     background-image: url('./assets/photos/fuorisalone_light.jpg');
   }
 </style>
+
+<!-- apertura e chiusura menu mobile -->
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function openNavWorks() {
+  document.getElementById("mySidenavWorks").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+function closeNavWorks() {
+  document.getElementById("mySidenavWorks").style.width = "0";
+}
+</script>
 
 </html>

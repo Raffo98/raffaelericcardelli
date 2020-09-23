@@ -109,6 +109,7 @@ a:hover {
 
 .column {
   float: left;
+  height: 25%;
   width: 25%;
 }
 

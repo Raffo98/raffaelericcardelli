@@ -3,13 +3,38 @@
   src: url("./assets/font/SuisseIntl-Medium.otf");
 }
 
+@media only screen and (max-width: 990px) {
+  .header .sections {
+    display: none;
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 0%;
+    float: right;
+    font-size: 30px;
+    display: inline-block;
+    padding-right: 80px;
+    top: 48%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@media only screen and (min-width: 991px) {
+
+  .hamburger {
+    display: none;
+  }
+
+}
+
 .inner-site {
   display: flex;
   flex-direction: column;
 }
 
 /*******************************************************PHOTOGRAPHY PAGE*******************************************************/
-
 /*header*/
 .header {
   font-family: "Suisse";
@@ -17,21 +42,61 @@
   text-align: center;
   width: 100%;
   position: absolute;
+  height: 76px;
   z-index: 999;
 }
 
+/*mobile menu*/
+.sidenav, .sidenavWorks {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.sidenav a, .sidenavWorks a {
+  padding: 8px 8px 8px;
+  text-decoration: none;
+  font-size: 80px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, .sidenavWorks a:hover {
+  opacity: 0.6;
+}
+
+.sidenav .closebtn, .sidenavWorks .closebtnWorks {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  font-size: 80px;
+}
+
+/*end mobile menu*/
 .name {
+  position: absolute;
+  left: 0%;
+  float: left;
   font-size: 20px;
   letter-spacing: 0.1em;
   display: inline-block;
-  float: left;
-  padding: 25px 80px;
-  vertical-align: middle;
+  padding-left: 80px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 ul li {
   display: inline-block;
-  vertical-align: middle;
 }
 
 .dropdown, .contact, .about {
@@ -47,15 +112,19 @@ a:hover {
   opacity: 0.6;
 }
 
-.sections {
-  margin: 0;
-  padding: 25px 80px;
-  font-size: 15px;
+.wrapper-sections {
+  position: absolute;
+  right: 0%;
   float: right;
+  font-size: 15px;
+  display: inline-block;
+  padding-right: 80px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /*body*/
-
 .wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
    * 100vh is the full height of the viewport. */
@@ -69,7 +138,7 @@ a:hover {
 }
 
 .wrapper::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .section {
@@ -97,7 +166,6 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-
   transform: translateZ(-1px) scale(1.5);
   z-index: -1;
 }
